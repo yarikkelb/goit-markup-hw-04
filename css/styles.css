@@ -138,6 +138,10 @@ color: var(--header-email);
     background-color: var(--hero);
     padding: 188px 0;
     text-align: center;
+    background-image: url(../images/office-1.jpg);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
    
 .about-list {
