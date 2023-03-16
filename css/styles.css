@@ -136,7 +136,9 @@ color: var(--header-email);
 
 .hero {    
     background-color: var(--hero);
-    background-image: url(../images/office-1.jpg); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-1.jpg); 
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 188px 0;
     text-align: center;
     background-repeat: no-repeat;
@@ -204,22 +206,30 @@ color: var(--header-email);
 .about-item::before{
     display: block;
     content: "";
-    height: 112px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 112px;       
+    background-color: var(--section-team-background);
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 .icon-strategy::before{
-    background-image: url(../images/Icon-1.png);
+    background-image: url(../images/antenna.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .icon-punctuality::before{
-    background-image: url(../images/Icon-2.png);
+    background-image: url(../images/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .icon-diligence::before{
-    background-image: url(../images/Icon-3.png);
+    background-image: url(../images/diagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .icon-technologies::before{
-    background-image: url(../images/Icon-4.png);
+    background-image: url(../images/astronaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .about-subtitle{
@@ -308,6 +318,12 @@ color: var(--header-email);
     order: 1;
     flex-grow: 0;
     margin: 0;
+}
+
+.team-icon {
+    display: inline;
+    width: 16px;
+    height: 16px;  
 }
 /**-----Portfolio---------*/
 .list {
