@@ -134,11 +134,11 @@ color: var(--header-email);
     color: var(--hover-focus)
 }
 
-.hero {
+.hero {    
     background-color: var(--hero);
+    background-image: url(../images/office-1.jpg); 
     padding: 188px 0;
     text-align: center;
-    background-image: url(../images/office-1.jpg);  
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -200,6 +200,26 @@ color: var(--header-email);
 }
 .about-item {
     width: calc((100% - 72px)/4);
+}
+.about-item::before{
+    display: block;
+    content: "";
+    height: 112px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-strategy::before{
+    background-image: url(../images/Icon-1.png);
+}
+.icon-punctuality::before{
+    background-image: url(../images/Icon-2.png);
+}
+.icon-diligence::before{
+    background-image: url(../images/Icon-3.png);
+}
+.icon-technologies::before{
+    background-image: url(../images/Icon-4.png);
 }
 
 .about-subtitle{
