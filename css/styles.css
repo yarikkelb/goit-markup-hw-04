@@ -319,11 +319,27 @@ color: var(--header-email);
     flex-grow: 0;
     margin: 0;
 }
-
+.social{
+    display: flex;
+    width: 232px;
+    height: 40px;
+    gap: 24px;
+}
 .team-icon {
-    display: inline;
-    width: 16px;
-    height: 16px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    background-size: 12px;
+    background-position: center;
+    width: 40px;
+    height: 40px; 
+    fill: #4D5AE5; 
+
+}
+.team-icon:is(:hover, :focus){
+    fill: #303030;
 }
 /**-----Portfolio---------*/
 .list {
