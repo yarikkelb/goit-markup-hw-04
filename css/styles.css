@@ -340,9 +340,7 @@ color: var(--header-email);
 .team-icon:is(:hover, :focus){
     fill: #303030;
 }
-.customers-sprite{
- 
-}
+
 .customers-link{
     width: 100%;
     height: 100%;
@@ -351,9 +349,7 @@ color: var(--header-email);
     justify-content: center;
     fill: #8e8f99; 
 }
-.customers-icon{
 
-}
 
 /**-----Portfolio---------*/
 .list {
