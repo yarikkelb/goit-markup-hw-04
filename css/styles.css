@@ -341,7 +341,7 @@ color: var(--header-email);
     fill: #303030;
 }
 .customers-sprite{
- display: flex;
+ 
 }
 .customers-link{
     width: 100%;
