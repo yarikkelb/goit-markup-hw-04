@@ -336,11 +336,25 @@ color: var(--header-email);
     width: 40px;
     height: 40px; 
     fill: #4D5AE5; 
-
 }
 .team-icon:is(:hover, :focus){
     fill: #303030;
 }
+.customers-sprite{
+ display: flex;
+}
+.customers-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #8e8f99; 
+}
+.customers-icon{
+
+}
+
 /**-----Portfolio---------*/
 .list {
     list-style: none;
@@ -427,6 +441,7 @@ padding: 100px 0;
 .footer-container{
     width: 264px;
 }
+
 .footer-title {
 position: absolute;
 width: 115px;
@@ -457,7 +472,50 @@ font-size: 16px;
 line-height: 1.5;           
 letter-spacing: 0.02em;
 color: var(--footer-text);
-margin: 0;
-}
 
+}
+.footer-social {
+    display: flex;
+    width: 208px;
+    height: 80px;
+    gap: 130px;
+
+}
+.social-text{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;     
+    letter-spacing: 0.02em;
+    color: var(--header);
+    margin: 0;
+}
+.soc-media{
+    display: flex;
+    margin-left: 120px;
+    justify-content: center;
+    gap: 16px;
+}
+.media-icon{
+    width: 40px;
+    height: 40px;
+}
+.footer-social-link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hero-F);
+    opacity: 0.1;
+   
+}
+.social-icon{
+    width: 24px;
+    height: 24px;
+    fill: var(--footer-span);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+}
 
