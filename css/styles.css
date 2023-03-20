@@ -322,9 +322,14 @@ body{
 .social{
     display: flex;
     width: 232px;
-    height: 40px;
-    gap: 24px;
+    height: 40px;  
+    
 }
+.social-list{
+    gap: 24px;   
+    
+}
+
 .team-icon {
     display: flex;
     align-items: center;
@@ -366,7 +371,7 @@ body{
 }
 .customers-icon{
     display: flex;
-    gap: 24px;
+    
 }
 
 /**-----Portfolio---------*/
@@ -486,32 +491,28 @@ font-size: 16px;
 line-height: 1.5;           
 letter-spacing: 0.02em;
 color: var(--footer-text);
-
 }
 
 .footer-social {
     width: 208px;
-    gap: 130px;
-
+    
 }
 .social-text{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;     
-    letter-spacing: 0.02em;
+    font-size: 16px;    
     color: var(--header);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0 120px ;
+    line-height: 1.5;
+    
 }
 .soc-media{
     display: flex;
-    gap: 16px;
-    margin-left: 120px;
-    justify-content: center;
-    
+    align-items: flex-start;
+    margin: 0;
+    gap: 16px;    
 }
 .media-icon{
     width: 40px;
@@ -524,7 +525,7 @@ color: var(--footer-text);
     justify-content: center;
     align-items: center;
     background-color: var(--hero-F);
-    opacity: 0.1;
+    fill: currentColor;
     
    
 }
