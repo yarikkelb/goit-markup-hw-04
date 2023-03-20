@@ -121,11 +121,11 @@ body{
     gap: 40px;
 }
 .header-email {
-font-family: 'Roboto';
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--header-email);
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--header-email);
 }
 .header-email:hover {
     color: var(--hover-focus);
@@ -349,7 +349,10 @@ color: var(--header-email);
     justify-content: center;
     fill: #8e8f99; 
 }
-
+.customers-icon{
+    display: flex;
+    gap: 24px;
+}
 
 /**-----Portfolio---------*/
 .list {
@@ -431,19 +434,19 @@ color: var(--header-email);
 
 /**-----Footer---------*/
 .footer {
-background-color:  var(--footer); 
-padding: 100px 0;
+    background-color:  var(--footer); 
+    padding: 100px 0;
 }
 .footer-container{
     width: 264px;
 }
 
 .footer-title {
-position: absolute;
-width: 115px;
-height: 22px;
-left: 156px;
-top: 2380px;
+    position: absolute;
+    width: 115px;
+    height: 22px;
+    left: 156px;
+    top: 2380px;
 }
 
 .footer-logo {
