@@ -297,9 +297,7 @@ body{
     padding: 32px 0;
     text-align: center;
 }
-.social {
-    margin-bottom: 0 32px;
-}
+
 .team-title-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -323,6 +321,7 @@ body{
     order: 1;
     flex-grow: 0;
     margin: 0;
+    margin-bottom: 8px;
 }
 .social-list{
     gap: 24px;  
@@ -339,7 +338,7 @@ body{
     color: var(--section-team-background);
 }
 .team-social:is(:hover, :focus){
-color: var(--hover-focus);
+background-color: var(--hover-focus);
 }
 
 .team-icon {
@@ -420,11 +419,13 @@ color: var(--hover-focus);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--hover-focus);
     color: var(--section-team-background);
+    border-color: var(--hover-focus);
 }
 .all-btn:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--hover-focus); 
     color: var(--section-team-background);
+    border-color: var(--hover-focus);
 }
 
 .gallery{
@@ -480,6 +481,7 @@ color: var(--hover-focus);
 }
 .footer-container{
     width: 264px;
+    margin: 0 120px 0 0;
 }
 
 .footer-title {
@@ -519,12 +521,12 @@ color: var(--hover-focus);
 }
 .social-text{
     align-items: flex-start;
-    margin-bottom: 16px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;    
     color: var(--header);
     line-height: 1.5; 
+    margin: 0 0 16px;
 }
 .soc-media{
     display: flex;
@@ -545,8 +547,6 @@ color: var(--hover-focus);
     background-color: rgba(255, 255, 255, 0.1);
 }
 .social-icon{
-    width: 24px;
-    height: 24px;
     fill: var(--section-team-background);
 }
 
