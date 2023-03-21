@@ -340,6 +340,9 @@ body{
     height: 40px;
     color: var(--section-team-background);
 }
+.team-social: is(:hover, :focus) {
+
+}
 
 .team-icon {
     fill: currentColor;
@@ -347,20 +350,10 @@ body{
 .team-icon:is(:hover, :focus){
     fill: #303030;
 }
-.customers-sprite{
-    display: flex;
-    height: 112px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    justify-content: center;
-    
-    padding: 0px 0px;
-        
-    
-}
+
 .customers-list{
-    gap: 24px;
     justify-content: center;
+    gap: 24px;
 }
 .customers-link{
     width: 100%;
@@ -368,14 +361,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #8e8f99; 
+    color: #8E8F99;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    gap: 24px;  
-    
+    gap: 24px;   
 }
-.customers-link:hover{
-    background-color: var(--hover-focus);
+.customers-link:is(:hover, :focus) {
+    border-color: var(--hover-focus);
+    color: var(--hover-focus);
 }
 .customers-link:hover .customers-icon{
     fill: var(--hover-focus);
@@ -383,7 +376,7 @@ body{
 .customers-icon{
     display: flex;
     justify-content: center;
-    
+    fill: currentColor;
 }
 
 /**-----Portfolio---------*/
@@ -422,10 +415,12 @@ body{
     gap: 24px;    
 }
 .all-btn:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--hover-focus);
     color: var(--section-team-background);
 }
 .all-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--hover-focus); 
     color: var(--section-team-background);
 }
@@ -439,6 +434,15 @@ body{
 }
 .gallery-block {
     width: calc((100% - 48px)/3);
+}
+.gallery-tabl{
+    display: block;
+}
+.gallery-tabl:hover{
+
+}
+.gallery-tabl:focus {
+
 }
 
 .gallery-container {
@@ -468,6 +472,9 @@ body{
 .footer {
     background-color:  var(--footer); 
     padding: 100px 0;
+}
+.foot-cont{
+    display: flex;
 }
 .footer-container{
     width: 264px;
