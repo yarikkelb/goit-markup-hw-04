@@ -28,6 +28,7 @@
 --footer-logo: #4d5ae5;
 --span: #2e2f42;
 --footer-span: #f4f4fd;
+--customers-link: #8E8F99;
 }
 
 body{
@@ -296,6 +297,9 @@ body{
     padding: 32px 0;
     text-align: center;
 }
+.social {
+    margin-bottom: 0 32px;
+}
 .team-title-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -320,12 +324,6 @@ body{
     flex-grow: 0;
     margin: 0;
 }
- 
-.social {
-    
-}
-       
-
 .social-list{
     gap: 24px;  
     justify-content: center;  
@@ -340,8 +338,8 @@ body{
     height: 40px;
     color: var(--section-team-background);
 }
-.team-social: is(:hover, :focus) {
-
+.team-social:is(:hover, :focus){
+color: var(--hover-focus);
 }
 
 .team-icon {
@@ -355,14 +353,18 @@ body{
     justify-content: center;
     gap: 24px;
 }
+.customers-item{
+    width: calc((100% - 120px)/6);
+    height: 88px;
+}
 .customers-link{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #8E8F99;
-    border: 1px solid #8E8F99;
+    color: var(--customers-link);
+    border: 1px solid var(--customers-link);
     border-radius: 4px;
     gap: 24px;   
 }
@@ -439,10 +441,10 @@ body{
     display: block;
 }
 .gallery-tabl:hover{
-
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-tabl:focus {
-
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-container {
@@ -489,71 +491,64 @@ body{
 }
 
 .footer-logo {
-font-family: 'Raleway', sans-serif;
-text-decoration: none;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.17;           
-display: inline-block;
-letter-spacing: 0.03em;
-text-transform: uppercase;              
-color: var(--footer-logo);
-margin-bottom: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;           
+    display: inline-block;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;              
+    color: var(--footer-logo);
+    margin-bottom: 16px;
 }
 .footer-span {
     color: var(--footer-span);
 }
 .footer-text {
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;           
-letter-spacing: 0.02em;
-color: var(--footer-text);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;           
+    letter-spacing: 0.02em;
+    color: var(--footer-text);
 }
 
 .footer-social {
-    width: 208px;
-    
+    width: 208px;   
 }
 .social-text{
-    display: flex;
     align-items: flex-start;
     margin-bottom: 16px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;    
     color: var(--header);
-    line-height: 1.5;
-    
+    line-height: 1.5; 
 }
 .soc-media{
     display: flex;
-    align-items: flex-start;
-    margin: auto 0;
-    gap: 16px;    
+    justify-content: center;
+    gap: 16px; 
 }
-.media-icon{
+.social-item{
     width: 40px;
     height: 40px;
 }
 .footer-social-link{
     display: flex;
-    width: 100%;
-    height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: var(--hero-F);
-    fill: currentColor;
-    
-   
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .social-icon{
     width: 24px;
     height: 24px;
-    fill: var(--footer-span);
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);  
+    fill: var(--section-team-background);
 }
+
 
 
