@@ -29,6 +29,7 @@
 --span: #2e2f42;
 --footer-span: #f4f4fd;
 --customers-link: #8E8F99;
+--footer-social-link:#31D0AA;
 }
 
 body{
@@ -320,7 +321,6 @@ body{
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0;
     margin-bottom: 8px;
 }
 .social-list{
@@ -546,6 +546,10 @@ background-color: var(--hover-focus);
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
 }
+.footer-social-link:is(:hover, :focus){
+    background-color: var(--footer-social-link)
+}
+    
 .social-icon{
     fill: var(--section-team-background);
 }
